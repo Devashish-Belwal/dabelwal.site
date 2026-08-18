@@ -1,39 +1,60 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { APITester } from "./APITester";
 import "./index.css";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import { useEffect, useState } from "react";
+
+const PORTRAIT_RATIO = 900 / 1600;   // 0.5625
+const LANDSCAPE_RATIO = 1600 / 900;  // 1.777...
 
 export function App() {
+  const [size, setSize] = useState({
+    w: window.innerWidth,
+    h: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const onResize = () =>
+      setSize({
+        w: window.innerWidth,
+        h: window.innerHeight,
+      });
+
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  const isLandscape = size.w >= size.h;
+  const viewportRatio = size.w / size.h;
+
+  const shouldLetterbox = isLandscape
+    ? viewportRatio > LANDSCAPE_RATIO
+    : viewportRatio > PORTRAIT_RATIO;
+
   return (
-    <div className="container mx-auto p-8 text-center relative z-10">
-      <div className="flex justify-center items-center gap-8 mb-8">
-        <img
-          src={logo}
-          alt="Bun Logo"
-          className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#646cffaa] scale-120"
-        />
-        <img
-          src={reactLogo}
-          alt="React Logo"
-          className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa] [animation:spin_20s_linear_infinite]"
-        />
-      </div>
-      <Card>
-        <CardHeader className="gap-4">
-          <CardTitle className="text-3xl font-bold">Bun + React</CardTitle>
-          <CardDescription>
-            Edit <code className="rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono">src/App.tsx</code> and save to
-            test HMR
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <APITester />
-        </CardContent>
-      </Card>
+    <div className="fixed inset-0 bg-slate-900 flex items-center justify-center">
+      <main
+        className={[
+          "bg-gray-500 overflow-y-auto shadow-2xl flex justify-center items-center",
+
+          shouldLetterbox
+            ? isLandscape
+              ? "h-full w-auto aspect-video"
+              : "h-full w-auto aspect-9/16"
+            : "w-full h-full",
+        ].join(" ")}
+      >
+        {/* Your app */}
+        <div>
+          <ul>
+            <a
+              
+            >
+              <li>
+                hello1
+              </li>
+            </a>
+          </ul>
+        </div>
+      </main>
     </div>
   );
 }
-
-export default App;
