@@ -54,6 +54,14 @@ export function App() {
                 https://www.google.com
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+              >
+                https://www.google.com
+              </a>
+            </li>
           </ul>
         </div>
       </main>
