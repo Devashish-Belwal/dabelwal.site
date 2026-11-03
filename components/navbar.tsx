@@ -44,7 +44,7 @@ export default function Navbar() {
           className="h-2/3 m-auto w-px bg-border"
         />
         {Object.entries(DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
+          .filter(([, social]) => social.navbar)
           .map(([name, social], index) => {
             const isExternal = social.url.startsWith("http");
             const IconComponent = social.icon;

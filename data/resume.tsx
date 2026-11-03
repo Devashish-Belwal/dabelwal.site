@@ -211,7 +211,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "CryptEx — High-Performance Crypto Exchange",
+      title: "Distributed Exchange — High-Performance Crypto Exchange",
       href: "https://debug.cex.dabelwal.online",
       dates: "2026",
       active: true,
