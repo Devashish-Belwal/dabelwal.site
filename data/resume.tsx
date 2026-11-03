@@ -8,7 +8,6 @@ import { Python } from "@/components/ui/svgs/python";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
   name: "Devashish Belwal",
@@ -17,42 +16,110 @@ export const DATA = {
   location: "Greater Noida, India",
   locationLink: "https://www.google.com/maps/place/Greater+Noida,+Uttar+Pradesh,+India",
   description:
-    "Full-Stack, Backend & AI Engineer specializing in distributed systems, real-time streaming, and autonomous AI agents.",
+    "Full-Stack and AI Engineer specializing in real-time LLM token streaming, autonomous AI agents, and high-performance distributed systems.",
   summary:
-    "Full-Stack, Backend & AI Engineer with expertise in building scalable, real-time distributed systems and autonomous AI agent workflows. Experienced in architecting end-to-end applications across Next.js, Node.js, WebSockets, Redis Streams, PostgreSQL (pgvector), and multi-provider LLM orchestration (OpenAI, Gemini Live, Anthropic). Currently pursuing a B.S. in Data Science and Applications at IIT Madras and a B.Tech in Electronics & Communications at J.S.S Noida.",
+    "Full-Stack and AI Engineer with deep expertise in architecting high-throughput distributed systems, real-time WebSocket infrastructure, and autonomous agent loops. Experienced in building scalable applications across Next.js, TypeScript, Node.js, Redis Streams, PostgreSQL (pgvector), and multi-provider LLM orchestration (OpenAI, Gemini Live, Anthropic). Currently pursuing a B.S. in Data Science and Applications at Indian Institute of Technology Madras.",
   avatarUrl: "",
   resumeUrl: "/resume.pdf",
   resumes: [
     {
-      label: "General / Backend & Distributed Systems Resume",
-      href: "/Devashish_Belwal_Resume.pdf",
+      label: "View Resume (PDF)",
+      href: "/resume.pdf",
     },
     {
       label: "Applied AI Resume",
       href: "/Devashish_Belwal_Applied_AI_Resume.pdf",
     },
+    {
+      label: "Backend & Systems Resume",
+      href: "/Devashish_Belwal_Resume.pdf",
+    },
   ],
   skills: [
-    { name: "TypeScript", icon: Typescript },
     { name: "Python", icon: Python },
-    { name: "C++", icon: Csharp },
+    { name: "TypeScript", icon: Typescript },
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Node.js", icon: Nodejs },
     { name: "PostgreSQL & pgvector", icon: Postgresql },
-    { name: "Redis (Streams & Lua)", icon: undefined },
+    { name: "Redis Streams", icon: undefined },
     { name: "WebSockets & SSE", icon: undefined },
     { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes },
     { name: "AWS (EC2)", icon: undefined },
-    { name: "Gemini Live & WebRTC", icon: undefined },
+    { name: "Gemini Live API", icon: undefined },
     { name: "OpenAI & Anthropic APIs", icon: undefined },
-    { name: "Codebase RAG", icon: undefined },
+    { name: "AST Code Chunking", icon: undefined },
     { name: "Bun & Express", icon: undefined },
     { name: "BullMQ & NATS", icon: undefined },
-    { name: "Prisma & MongoDB", icon: undefined },
+    { name: "Prisma ORM", icon: undefined },
     { name: "Tailwind CSS", icon: undefined },
+    { name: "Deterministic Guardrails", icon: undefined },
     { name: "CI/CD & GitHub Actions", icon: undefined },
+  ],
+  skillCategories: [
+    {
+      category: "AI & LLMs",
+      description: "Model orchestration, prompt pipelines, and real-time streaming",
+      skills: [
+        "OpenAI API",
+        "Anthropic API",
+        "Gemini Live API",
+        "Function / Tool Calling",
+        "Prompt Engineering",
+      ],
+    },
+    {
+      category: "RAG & Vector Search",
+      description: "Semantic search, indexing, and syntax-aware codebase retrieval",
+      skills: [
+        "pgvector (HNSW Indexing)",
+        "AST Code Chunking",
+        "Vector Embeddings",
+        "Semantic Search",
+      ],
+    },
+    {
+      category: "Real-Time & Streaming",
+      description: "Low-latency protocols, token streaming, and media channels",
+      skills: [
+        "Server-Sent Events (SSE)",
+        "WebRTC (LiveKit SFU)",
+        "WebSockets",
+        "Token Streaming",
+      ],
+    },
+    {
+      category: "Backend & Data",
+      description: "High-concurrency services, event queues, and relational data",
+      skills: [
+        "Node.js",
+        "Express",
+        "Bun",
+        "Next.js",
+        "PostgreSQL",
+        "Redis Streams & Lua",
+        "BullMQ",
+        "Prisma ORM",
+      ],
+    },
+    {
+      category: "DevOps & Safety",
+      description: "Containerization, infrastructure, guardrails, and reliability",
+      skills: [
+        "Docker",
+        "AWS (EC2)",
+        "GitHub Actions",
+        "CI/CD",
+        "Deterministic Guardrails",
+        "Jest",
+      ],
+    },
+    {
+      category: "Languages",
+      description: "Core programming and query languages",
+      skills: ["Python", "TypeScript", "JavaScript", "SQL", "HTML/CSS"],
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -89,24 +156,24 @@ export const DATA = {
       href: "https://100xdevs.com",
       badges: ["AI Engineering", "Distributed Systems"],
       location: "Remote",
-      title: "Full-Stack, Backend & AI Engineer",
+      title: "Full-Stack and AI Engineer",
       logoUrl: "",
       start: "May 2026",
       end: "Present",
       description:
-        "Built and deployed end-to-end AI applications integrating OpenAI, Anthropic, and Gemini models with real-time SSE token streaming, function calling pipelines, and structured JSON outputs. Built distributed, event-driven cohort backend services with Node.js, Express, Bun, PostgreSQL, and Prisma ORM, implementing Redis caching layers and high-concurrency WebSocket channels. Architected modular monorepos with Turborepo, containerized microservices with Docker, and configured automated CI/CD deployment pipelines.",
+        "- Built and deployed end-to-end AI applications integrating OpenAI, Anthropic, and Gemini models with real-time SSE token streaming, function calling pipelines, and structured JSON outputs.\n- Designed modular Turborepo monorepos, containerized AI agent microservices with Docker, engineered context caching strategies, and automated testing and cloud deployments with CI/CD.",
     },
     {
-      company: "Client Solutions — Full Stack Freelance",
+      company: "Client Solutions — Full Stack Freelance Projects",
       href: "#",
       badges: ["Production Deployments"],
       location: "Greater Noida, India",
       title: "Full Stack Freelance Developer",
       logoUrl: "",
       start: "Jun 2025",
-      end: "Oct 2025",
+      end: "Feb 2026",
       description:
-        "**Inventory Manager:** Engineered an inventory and accounting platform with an ACID double-entry ledger, cutting monthly financial reconciliation from 2 days to 4 hours.\n\n**ClinicPro:** Built a clinic management system with conflict-free slot booking and sub-millisecond patient search across 1,000+ records, lifting attendance by 20%.\n\n**CloneTree:** Built a creator bio-link platform with Next.js 16, React 19, Tailwind CSS, and fluid Motion animations.",
+        "- **Inventory Manager:** Engineered an inventory and accounting platform with an ACID double-entry ledger, cutting monthly financial reconciliation from 2 days to 4 hours.\n- **ClinicPro:** Built a clinic management system with conflict-free slot booking and sub-millisecond patient search across 1,000+ records, lifting attendance by 20%.\n- **CloneTree:** Built a creator bio-link platform with Next.js 16, React 19, Tailwind CSS, and fluid Motion animations.",
     },
   ],
 
@@ -125,30 +192,16 @@ export const DATA = {
         "Modern Application Development",
       ],
     },
-    {
-      school: "J.S.S Academy of Technical Education, Noida",
-      href: "https://jssaten.ac.in",
-      degree: "B.Tech in Electronics and Communications",
-      logoUrl: "",
-      start: "2022",
-      end: "2026",
-      cgpa: "8.10 / 10",
-      courses: [
-        "Operating Systems",
-        "Database Management Systems",
-        "AI & Machine Learning",
-      ],
-    },
   ],
 
   projects: [
     {
-      title: "CodePuppet — Self-Hosted AI Coding Agent",
+      title: "CodeBoy — Self-Hosted AI Coding Agent",
       href: "https://codepuppet.dabelwal.online",
       dates: "2026",
       active: true,
       description:
-        "Architected a Turborepo monorepo with three applications and six shared packages; isolated 11 tools across five categories in a permission-gated sandbox and validated core workflows with 40+ Jest tests. Unified streaming adapters for four LLM providers over SSE in under 100 ms, persisted turns atomically with per-turn token accounting, and secured keys using AES-256-GCM and device-flow login.",
+        "- Architected a Turborepo monorepo with three applications and six shared packages; isolated 11 tools across five categories in a permission-gated sandbox and validated core workflows with 40+ Jest tests.\n- Unified streaming adapters for four LLM providers over SSE in under 100 ms, persisted turns atomically with per-turn token accounting, and secured keys using AES-256-GCM and device-flow login.",
       technologies: [
         "TypeScript",
         "Next.js 16",
@@ -182,18 +235,16 @@ export const DATA = {
       dates: "2026",
       active: true,
       description:
-        "Architected a full-duplex voice AI agent with LiveKit WebRTC and Gemini Live API; streamed bi-directional audio with sub-second latency, interruptible speech turn-taking, and real-time code drawer citations. Grounded voice interactions with an asynchronous codebase RAG engine (BullMQ, AST chunking); indexed 768-d embeddings in pgvector via HNSW and queried symbol dependency call-chains with recursive CTEs.",
+        "- Architected a full-duplex voice AI agent with LiveKit WebRTC and Gemini Live API; streamed bi-directional audio with sub-second latency, interruptible speech turn-taking, and real-time code drawer citations.\n- Grounded voice interactions with an asynchronous codebase RAG engine (BullMQ, AST chunking); indexed 768-d embeddings in pgvector via HNSW and queried symbol dependency call-chains with recursive CTEs.",
       technologies: [
         "TypeScript",
         "Bun",
         "LiveKit WebRTC",
         "Gemini Live API",
         "Next.js",
-        "PostgreSQL",
         "pgvector",
         "BullMQ",
         "Docker",
-        "AWS EC2",
       ],
       links: [
         {
@@ -216,7 +267,7 @@ export const DATA = {
       dates: "2026",
       active: true,
       description:
-        "Engineered an event-driven spot and perpetual exchange across six microservices, utilizing red-black tree order books and FIFO queues to sustain 1,000+ orders/sec with sub-50 ms p95 latency. Decoupled persistence and WebSocket fan-out via Redis Streams consumer groups, streaming book deltas to 500+ clients under 100 ms and rehydrating R2 snapshots in sub-5 s with zero data loss.",
+        "- Engineered an event-driven spot and perpetual exchange across six microservices, utilizing red-black tree order books and FIFO queues to sustain 1,000+ orders/sec with sub-50 ms p95 latency.\n- Decoupled persistence and WebSocket fan-out via Redis Streams consumer groups, streaming book deltas to 500+ clients under 100 ms and rehydrating R2 snapshots in sub-5 s with zero data loss.",
       technologies: [
         "TypeScript",
         "Bun",
@@ -225,7 +276,6 @@ export const DATA = {
         "WebSockets",
         "Docker",
         "Turborepo",
-        "Microservices",
       ],
       links: [
         {
@@ -248,7 +298,7 @@ export const DATA = {
       dates: "2026",
       active: true,
       description:
-        "Engineered a multi-turn OpenAI tool-calling agent loop across seven tools, enforcing a 6-step execution ceiling, repeated-failure circuit breakers, and exponential backoff retries to handle provider rate limits. Enforced deterministic policy guardrails and human-in-the-loop approvals for refunds above INR 2,000 with RBAC and concurrency locks; surfaced ticket lifecycles and tool traces in a Next.js dashboard.",
+        "- Engineered a multi-turn OpenAI tool-calling agent loop across seven tools, enforcing a 6-step execution ceiling, repeated-failure circuit breakers, and exponential backoff retries to handle provider rate limits.\n- Enforced deterministic policy guardrails and human-in-the-loop approvals for refunds above INR 2,000 with RBAC and concurrency locks; surfaced ticket lifecycles and sequenced tool-execution traces in a Next.js dashboard.",
       technologies: [
         "TypeScript",
         "Next.js 15",
@@ -267,6 +317,35 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/Devashish-Belwal/ticket-agent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "CloneTree — Creator Bio-Link Platform",
+      href: "https://clonetree.dabelwal.online",
+      dates: "2025",
+      active: true,
+      description:
+        "Built a creator bio-link platform with Next.js 16, React 19, Tailwind CSS, and fluid Motion animations. Centralizes links, social identities, and media with sub-second performance.",
+      technologies: [
+        "Next.js 16",
+        "React 19",
+        "Tailwind CSS",
+        "TypeScript",
+        "Motion",
+      ],
+      links: [
+        {
+          type: "Live Demo",
+          href: "https://clonetree.dabelwal.online",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/Devashish-Belwal/clonetree",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -301,36 +380,6 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/Devashish-Belwal/ludo",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "CloneTree — Creator Bio-Link Platform",
-      href: "https://clonetree.dabelwal.online",
-      dates: "2025",
-      active: true,
-      description:
-        "Built a modern creator bio-link platform with Next.js 16, React 19, Tailwind CSS, and fluid Motion animations. Centralizes social presences, portfolio items, and media links into a fast, responsive, and animated profile tree.",
-      technologies: [
-        "TypeScript",
-        "Next.js 16",
-        "React 19",
-        "Tailwind CSS",
-        "Motion",
-        "Vite",
-      ],
-      links: [
-        {
-          type: "Live Demo",
-          href: "https://clonetree.dabelwal.online",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/Devashish-Belwal/clonetree",
           icon: <Icons.github className="size-3" />,
         },
       ],
